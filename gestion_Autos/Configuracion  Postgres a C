@@ -1,0 +1,18 @@
+-------liberia para conectar postgres a C---------------------------
+sudo apt-get update
+sudo apt-get install libpq-dev
+
+
+
+
+
+---------para compilar
+
+gcc -o myprograma myprogram.c -I/usr/include/postgresql -lpq
+/.myprograma
+
+----------------dentro del codigo--------------------------------
+#include <libpq-fe.h>
+
+----------------Compilar tu código enlazando la biblioteca de PostgreSQL:
+gcc -o myprogram myprogram.c -lpq
